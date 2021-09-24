@@ -3,7 +3,7 @@ import CoinActivity from "./CoinActivity";
 
 function Wallet() {
   return (
-    <div className="bg-white rounded mx-2 my-2">
+    <div className="bg-white w-1/2 rounded mx-2 my-2">
       <div className="flex justify-between m-2">
         <h1>Wallet</h1>
         <div className="flex">

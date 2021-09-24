@@ -15,7 +15,7 @@ export default function Home() {
       <div>
         <Header />
       </div>
-      <div className="flex flex-grow-">
+      <div className="flex-row md:flex">
         <Sidebar />
         <MainSection />
       </div>
