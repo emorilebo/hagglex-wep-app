@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
-import MainSection from "./MainSection";
+import MainSection from "../components/MainSection";
 
 export default function Home() {
   return (
@@ -15,10 +15,8 @@ export default function Home() {
       <div>
         <Header />
       </div>
-      <div>
+      <div className="flex flex-grow-">
         <Sidebar />
-      </div>
-      <div>
         <MainSection />
       </div>
     </div>
