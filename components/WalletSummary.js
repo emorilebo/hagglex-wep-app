@@ -1,3 +1,4 @@
+import { InformationCircleIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 
 function WalletSummary() {
@@ -31,16 +32,37 @@ function WalletSummary() {
             <button className="bg-gray-100 m-6">EXTERNAL WALLET</button>
             <button className="bg-gray-100 m-6">HAGGLEX WALLET</button>
           </div>
-          <p className="font-semibold">Amount to send</p>
-          <div className="flex items-baseline">
-            <p className="text-5xl font-semibold">0.00</p>
-            <p>NGN</p>
+          <div className="flex items-end">
+            <div className="border-b w-4/5 border-black m-4">
+              <p className="font-semibold">Amount to send</p>
+
+              <div className="flex items-baseline">
+                <p className="text-5xl font-semibold">0.00</p>
+                <p>NGN</p>
+              </div>
+            </div>
+            <img src="/swap.png" className="h-10" />
           </div>
-          <di className="flex justify-end">
-              <div className="border"/>
-              <img src="/swap.png" className="h-10" />
-          </di>
-          <p>0.00000000BTC</p>
+
+          <div className="m-4 border-b">
+            <p>0.00000000BTC</p>
+            <p className="font-bold">Send to</p>
+            <input
+              className="border-2 p-4 w-full text-xs rounded-lg"
+              type="text"
+              placeholder="Paste wallet address"
+            />
+            <p className="text-gray-500 text-xs">Transaction Fees: 0.0000000000BTC</p>
+            <button className="border p-3 mt-6 rounded-lg w-full bg-blue-800 text-white">SEND BTC</button>
+            <div className="flex items-center justify-center rounded-3xl border bg-blue-100 my-3 mx-12">
+                <InformationCircleIcon className="h-5 text-blue-900"/>
+                <p className="text-blue-900 font-semibold text-sm">Send only BTC to this deposit address</p>
+            </div>
+          </div>
+         <div className="m-4">
+         <p className="text-xs"> - Paste a BTC address only through this manner</p>
+          <p className="text-xs"> - Sending coins or tokens other than BTC to this address may result in the loss of your tokens</p>
+         </div>
         </div>
       </div>
     </div>
