@@ -1,6 +1,6 @@
 function MainHeader() {
     return (
-        <div className="bg-yellow-500 mx-3 my-4 px-6 py-4 rounded-md">
+        <div className="shadow-md bg-yellow-500 mx-3 my-4 px-6 py-4 rounded-md">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
           <div>
@@ -11,7 +11,7 @@ function MainHeader() {
           </div>
           <div className="bg-white rounded-3xl flex items-center pl-3">
           <p>USD</p>
-          <button className="bg-yellow-500 rounded-3xl text-xs font-bold mx-2 my-1 px-4 py-1">NGN</button>
+          <button className="shadow-lg bg-yellow-500 rounded-3xl text-xs font-bold mx-2 my-1 px-4 py-1">NGN</button>
           </div>
         </div>
       </div>

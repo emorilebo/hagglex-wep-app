@@ -4,7 +4,7 @@ import { BellIcon, ChevronDownIcon } from "@heroicons/react/solid";
 
 function Header() {
   return (
-    <div className="flex justify-between">
+    <div className="sticky top-0 z-50 flex justify-between shadow-md ">
       <div className="flex items-center p-5">
         <Image src="/hagglexlogo.png" width={40} height={40} layout="fixed" />
         <h1 className="pl-2 text-xl text-blue-900 font-bold">HaggleX</h1>
